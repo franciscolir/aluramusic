@@ -6,6 +6,8 @@ public class Audios {
     private double duracionEnMinutos;
     private int añoLanzamiento;
     private String transcripcion;
+    private int sumaDeLasValoraciones;
+    private int totalDeValoraciones;
 
     public String getTitulo() {
         return titulo;
@@ -46,7 +48,28 @@ public class Audios {
     public void setTranscripcion(String transcripcion) {
         this.transcripcion = transcripcion;
     }
+    public int getSumaDeLasValoraciones() {
+        return sumaDeLasValoraciones;
+    }
+
+    public void setSumaDeLasValoraciones(int sumaDeLasValoraciones) {
+        this.sumaDeLasValoraciones = sumaDeLasValoraciones;
+    }
+
+    public int getTotalDeValoraciones() {
+        return totalDeValoraciones;
+    }
+
+    public void setTotalDeValoraciones(int totalDeValoraciones) {
+        this.totalDeValoraciones = totalDeValoraciones;
+    }
     public void mostrarFichaTecnica (){
             }
-
+    public void evaluacion (int valoracion ) {
+        sumaDeLasValoraciones += valoracion;
+        totalDeValoraciones ++;
+    }
+    public double promedioDeEvaluaciones () {
+        return (double) sumaDeLasValoraciones / totalDeValoraciones;
+    }
 }

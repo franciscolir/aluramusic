@@ -1,3 +1,4 @@
+import com.aluracursos.aluramusic.calculos.Calculadora;
 import com.aluracursos.aluramusic.modelos.Canciones;
 import com.aluracursos.aluramusic.modelos.Podcasts;
 
@@ -27,6 +28,14 @@ public class Pantalla {
                                     "A hunk, a hunk (that's a guess)");
         burningLove.mostrarFichaTecnica();
 
+
+        burningLove.evaluacion(10);
+        burningLove.evaluacion(10);
+        burningLove.evaluacion(10);
+        System.out.println(burningLove.getTotalDeValoraciones());
+        System.out.println(burningLove.getSumaDeLasValoraciones());
+        System.out.println(burningLove.promedioDeEvaluaciones());
+
         System.out.println("***********************Podcasts**************************");
 
         Podcasts podEjemplo = new Podcasts();
@@ -50,7 +59,12 @@ public class Pantalla {
                                     "sed massa libero. Proin convallis faucibus venenatis. Mauris commodo ac\n " +
                                     "libero vitae mollis. Mauris lobortis viverra tortor.");
         podEjemplo.mostrarFichaTecnica();
-                    }
-
+        podEjemplo.evaluacion(5);
+        podEjemplo.evaluacion(5);
+        podEjemplo.evaluacion(5);
+        System.out.println(podEjemplo.getTotalDeValoraciones());
+        System.out.println(podEjemplo.getSumaDeLasValoraciones());
+        System.out.println(podEjemplo.promedioDeEvaluaciones());
 
     }
+}
