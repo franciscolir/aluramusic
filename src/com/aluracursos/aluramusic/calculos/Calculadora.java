@@ -1,38 +1,20 @@
 package com.aluracursos.aluramusic.calculos;
 
-public class Calculadora {
+import com.aluracursos.aluramusic.modelos.Audios;
 
-    private int cantidadDeReproducciones;
-    private int cantidadDeMegusta;
+public class Calculadora extends Audios implements Clasificacion {
 
-    private double mediadeEvaluaciones;
-
-
-
-    public int getCantidadDeReproducciones() {
-        return cantidadDeReproducciones;
-    }
-
-    public void setCantidadDeReproducciones(int cantidadDeReproducciones) {
-        this.cantidadDeReproducciones = cantidadDeReproducciones;
-    }
-
-    public int getCantidadDeMegusta() {
-        return cantidadDeMegusta;
-    }
-
-    public void setCantidadDeMegusta(int cantidadDeMegusta) {
-        this.cantidadDeMegusta = cantidadDeMegusta;
+@Override
+    public int getClasificacion(){
+        if (getCantidadDeReproducciones()>1000) {
+            return 4;
+        }else{
+            return 2;
+        }
     }
 
 
-    public double getMediadeEvaluaciones() {
-        return mediadeEvaluaciones;
-    }
 
-    public void setMediadeEvaluaciones(double mediadeEvaluaciones) {
-        this.mediadeEvaluaciones = mediadeEvaluaciones;
-    }
 
 
 

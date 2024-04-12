@@ -4,6 +4,7 @@ import com.aluracursos.aluramusic.modelos.Podcasts;
 
 public class Pantalla {
     public static void main(String[] args) {
+        Calculadora calculadora = new Calculadora();
 
         System.out.println("***********************Canciones**************************");
         Canciones burningLove = new Canciones();
@@ -32,6 +33,10 @@ public class Pantalla {
         burningLove.evaluacion(10);
         burningLove.evaluacion(10);
         burningLove.evaluacion(10);
+        burningLove.setCantidadDeReproducciones(1000);
+        burningLove.setCantidadDeMegusta(100);
+
+        System.out.println(calculadora.getClasificacion());
         System.out.println(burningLove.getTotalDeValoraciones());
         System.out.println(burningLove.getSumaDeLasValoraciones());
         System.out.println(burningLove.promedioDeEvaluaciones());

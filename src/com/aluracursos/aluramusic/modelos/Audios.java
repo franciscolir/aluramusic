@@ -8,6 +8,24 @@ public class Audios {
     private String transcripcion;
     private int sumaDeLasValoraciones;
     private int totalDeValoraciones;
+    private int cantidadDeReproducciones;
+    private int cantidadDeMegusta;
+
+    public int getCantidadDeReproducciones() {
+        return cantidadDeReproducciones;
+    }
+
+    public void setCantidadDeReproducciones(int cantidadDeReproducciones) {
+        this.cantidadDeReproducciones = cantidadDeReproducciones;
+    }
+
+    public int getCantidadDeMegusta() {
+        return cantidadDeMegusta;
+    }
+
+    public void setCantidadDeMegusta(int cantidadDeMegusta) {
+        this.cantidadDeMegusta = cantidadDeMegusta;
+    }
 
     public String getTitulo() {
         return titulo;

@@ -1,6 +1,10 @@
 package com.aluracursos.aluramusic.modelos;
 
 public class Canciones extends Audios{
+    private String album;
+    private String artista;
+    private String genero;
+    private String featuring;
 
     public String getAlbum() {
         return album;
@@ -9,11 +13,6 @@ public class Canciones extends Audios{
     public void setAlbum(String album) {
         this.album = album;
     }
-
-    private String album;
-    private String artista;
-    private String genero;
-    private String featuring;
 
     public String getArtista() {
         return artista;
