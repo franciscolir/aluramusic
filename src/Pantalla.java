@@ -1,8 +1,10 @@
 import com.aluracursos.aluramusic.modelos.Canciones;
+import com.aluracursos.aluramusic.modelos.Podcasts;
 
 public class Pantalla {
     public static void main(String[] args) {
 
+        System.out.println("***********************Canciones**************************");
         Canciones burningLove = new Canciones();
         burningLove.setAlbum("empty");
         burningLove.setTitulo("Burning Love");
@@ -13,61 +15,41 @@ public class Pantalla {
         burningLove.setDuracionEnMinutos(2.57);
         burningLove.setGenero("Rock");
         burningLove.setTranscripcion("You wanna do it again?\n" +
-                "Yeah, okay\n" +
-                "Can we roll in?\n" +
-                "We take two\n" +
-                "One, two\n" +
-                "One, two, three\n" +
-                "Lord Almighty\n" +
-                "I feel my temperature rising, mm\n" +
-                "Higher and higher\n" +
-                "It's burning through to my soul\n" +
-                "Girl, girl, girl, you gonna set me on fire\n" +
-                "My brain is flaming\n" +
-                "I don't know which way to go\n" +
-                "Your kisses lift me higher\n" +
-                "Like the sweet song of a choir\n" +
-                "You light my morning sky\n" +
-                "With burning love\n" +
-                "Hmm, ooh-ooh-ooh\n" +
-                "I feel my temperature rising\n" +
-                "Help me, I'm flaming\n" +
-                "I must be a hundred and nine\n" +
-                "Burning, burning, burning\n" +
-                "And nothing can cool me\n" +
-                "I just might turn into smoke\n" +
-                "But I feel fine\n" +
-                "'Cause your kisses lift me higher\n" +
-                "Like a sweet song of a choir\n" +
-                "And you light my morning sky\n" +
-                "With morning love\n" +
-                "It's coming closer\n" +
-                "The flames are now licking my body\n" +
-                "Won't you help me\n" +
-                "Feel like I'm slipping away\n" +
-                "It's hard to breath\n" +
-                "And my chest is a-heaving\n" +
-                "Lord, have mercy\n" +
-                "I'm burning the hole where I lay\n" +
-                "Your kisses lift me higher\n" +
-                "Like the sweet song of a choir\n" +
-                "You light my morning sky with burning love\n" +
-                "With burning love\n" +
-                "I'm just a hunk, a hunk of burning love (ah)\n" +
-                "Just a hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "I need a hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk of burning love (ah)\n" +
-                "A hunk, a hunk (that's a guess)");
+                                    "Yeah, okay\n" +
+                                    "Can we roll in?\n" +
+                                    "We take two\n" +
+                                    "One, two\n" +
+                                    "/....\n" +
+                                    "A hunk, a hunk of burning love (ah)\n" +
+                                    "I need a hunk, a hunk of burning love (ah)\n" +
+                                    "A hunk, a hunk of burning love (ah)\n" +
+                                    "A hunk, a hunk of burning love (ah)\n" +
+                                    "A hunk, a hunk (that's a guess)");
         burningLove.mostrarFichaTecnica();
-    }
+
+        System.out.println("***********************Podcasts**************************");
+
+        Podcasts podEjemplo = new Podcasts();
+
+        podEjemplo.setNombreDelPodcast("Pereza");
+        podEjemplo.setCategoria("Entrevistas");
+        podEjemplo.setTemporadas(1);
+        podEjemplo.setEpisodio(1);
+        podEjemplo.setConductor("Juan Perez");
+        podEjemplo.setPanelista("Marcos Perez");
+        podEjemplo.setInvitado("Tony Stark");
+        podEjemplo.setTitulo("Conversando con Tony Stark");
+        podEjemplo.setAñoLanzamiento(2024);
+        podEjemplo.setDuracionEnMinutos(80);
+        podEjemplo.setTranscripcion( "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
+                                    "Aliquam quis massa at libero accumsan tempor non commodo orci. \n" +
+                                    "Nullam congue congue quam ut suscipit. Curabitur sagittis erat sit amet \n" +
+                                    "ultricies convallis. Duis sagittis tortor nec lectus interdum mollis. \n" +
+                                    "Vestibulum mauris odio, sagittis a sem nec, rhoncus interdum est. Duis \n" +
+                                    "sed massa libero. Proin convallis faucibus venenatis. Mauris commodo ac\n " +
+                                    "libero vitae mollis. Mauris lobortis viverra tortor.");
+        podEjemplo.mostrarFichaTecnica();
+                    }
+
+
     }

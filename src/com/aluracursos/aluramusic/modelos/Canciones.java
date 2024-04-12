@@ -46,6 +46,7 @@ public class Canciones extends Audios{
         System.out.println("Año de lanzamiento " + getAñoLanzamiento());
         System.out.println("Duracion "+ getDuracionEnMinutos() +"min.");
         System.out.println("Genero musical: "+ getGenero());
+        System.out.println("Letra de la cancion: \n" + getTranscripcion());
     }
 
 

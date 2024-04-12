@@ -46,5 +46,7 @@ public class Audios {
     public void setTranscripcion(String transcripcion) {
         this.transcripcion = transcripcion;
     }
+    public void mostrarFichaTecnica (){
+            }
 
 }
