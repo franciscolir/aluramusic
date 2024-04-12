@@ -70,15 +70,14 @@ public class Podcasts extends Audios {
 
     public void mostrarFichaTecnica (){
         System.out.println("Nombre del pordcast: " + getNombreDelPodcast());
-        System.out.println("Titulo del capitulo: " + getTitulo());
-        System.out.println("Creador del podcast: " + getAutor());
-        System.out.println("Conductor: " + getConductor());
-        System.out.println("Panelistas: " + getPanelista());
-        System.out.println("Invitado especial: " + getInvitado());
-        System.out.println("Año de lanzamiento " + getAñoLanzamiento());
-        System.out.println("Duracion "+ getDuracionEnMinutos() +"min.");
         System.out.println("Categoria: "+ getCategoria());
+        System.out.println("Titulo del capitulo: " + getTitulo());
+        System.out.println("Conductor: " + getConductor());
+        System.out.println("Invitado especial: " + getInvitado());
+        System.out.println("Panelistas: " + getPanelista());
+        System.out.println("Duracion "+ getDuracionEnMinutos() +"min.");
         System.out.println("Subtitulos: \n" + getTranscripcion());
-
+        System.out.println("Creador del podcast: " + getAutor());
+        System.out.println("Año de lanzamiento " + getAñoLanzamiento());
     }
 }

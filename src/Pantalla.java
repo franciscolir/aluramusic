@@ -31,10 +31,11 @@ public class Pantalla {
 
         Podcasts podEjemplo = new Podcasts();
 
-        podEjemplo.setNombreDelPodcast("Pereza");
+        podEjemplo.setNombreDelPodcast("Entrevista con Pereza");
         podEjemplo.setCategoria("Entrevistas");
         podEjemplo.setTemporadas(1);
         podEjemplo.setEpisodio(1);
+        podEjemplo.setAutor("Agencia Podcast.inc");
         podEjemplo.setConductor("Juan Perez");
         podEjemplo.setPanelista("Marcos Perez");
         podEjemplo.setInvitado("Tony Stark");
