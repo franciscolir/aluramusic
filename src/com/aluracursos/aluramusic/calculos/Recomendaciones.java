@@ -6,9 +6,9 @@ public class Recomendaciones {
 
     public void recomendacion (Audios audios) {
     if (audios.getClasificacion() >= 8){
-        System.out.println(audios.getTitulo() + "Populares del momento");
+        System.out.println(audios.getTitulo() + " Esta entre los Populares del momento");
     }else{
-        System.out.println(audios.getTitulo() + "Otros favoritos");
+        System.out.println(audios.getTitulo() + " Es otro favorito");
     }
 }
 }

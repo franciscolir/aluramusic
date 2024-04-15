@@ -10,6 +10,15 @@ public class Podcasts extends Audios {
     private String panelista;
     private String invitado;
 
+    @Override
+    public int getClasificacion() {
+        if (getCantidadDeReproducciones() >= 2000){
+            return 9;
+        }else{
+            return 2;
+        }
+    }
+
     public String getNombreDelPodcast() {
         return nombreDelPodcast;
     }

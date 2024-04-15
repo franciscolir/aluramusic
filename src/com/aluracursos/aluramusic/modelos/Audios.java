@@ -10,33 +10,35 @@ public class Audios {
     private int totalDeValoraciones;
     private int cantidadDeReproducciones;
     private int cantidadDeMegusta;
-    //private int clasificacion;
-
+    private int clasificacion;
 
     public void meGusta(){
-    this.cantidadDeMegusta++;
-   }
+        this.cantidadDeMegusta++;
+    }
 
     public void reproduce (){
-    this.cantidadDeReproducciones++;
-
-     }
-    
-    public int getClasificacion() {
-    return getClasificacion();
+        this.cantidadDeReproducciones++;
     }
-    
+
+    public void setClasificacion(int clasificacion) {
+        this.clasificacion = clasificacion;
+    }
+    public int getClasificacion() {
+        return clasificacion;
+    }
+
     public int getCantidadDeMegusta() {
         return cantidadDeMegusta;
     }
+
     public void setCantidadDeMegusta(int cantidadDeMegusta) {
         this.cantidadDeMegusta = cantidadDeMegusta;
     }
 
-  
     public int getCantidadDeReproducciones() {
         return cantidadDeReproducciones;
     }
+
     public void setCantidadDeReproducciones(int cantidadDeReproducciones) {
         this.cantidadDeReproducciones = cantidadDeReproducciones;
     }
