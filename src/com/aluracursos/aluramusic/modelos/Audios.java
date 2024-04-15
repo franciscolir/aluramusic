@@ -10,21 +10,35 @@ public class Audios {
     private int totalDeValoraciones;
     private int cantidadDeReproducciones;
     private int cantidadDeMegusta;
+    //private int clasificacion;
 
-    public int getCantidadDeReproducciones() {
-        return cantidadDeReproducciones;
+
+    public void meGusta(){
+    this.cantidadDeMegusta++;
+   }
+
+    public void reproduce (){
+    this.cantidadDeReproducciones++;
+
+     }
+    
+    public int getClasificacion() {
+    return getClasificacion();
     }
-
-    public void setCantidadDeReproducciones(int cantidadDeReproducciones) {
-        this.cantidadDeReproducciones = cantidadDeReproducciones;
-    }
-
+    
     public int getCantidadDeMegusta() {
         return cantidadDeMegusta;
     }
-
     public void setCantidadDeMegusta(int cantidadDeMegusta) {
         this.cantidadDeMegusta = cantidadDeMegusta;
+    }
+
+  
+    public int getCantidadDeReproducciones() {
+        return cantidadDeReproducciones;
+    }
+    public void setCantidadDeReproducciones(int cantidadDeReproducciones) {
+        this.cantidadDeReproducciones = cantidadDeReproducciones;
     }
 
     public String getTitulo() {

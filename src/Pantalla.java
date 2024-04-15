@@ -1,10 +1,10 @@
-import com.aluracursos.aluramusic.calculos.Calculadora;
+
+import com.aluracursos.aluramusic.calculos.Recomendaciones;
 import com.aluracursos.aluramusic.modelos.Canciones;
 import com.aluracursos.aluramusic.modelos.Podcasts;
 
 public class Pantalla {
     public static void main(String[] args) {
-        Calculadora calculadora = new Calculadora();
 
         System.out.println("***********************Canciones**************************");
         Canciones burningLove = new Canciones();
@@ -36,10 +36,10 @@ public class Pantalla {
         burningLove.setCantidadDeReproducciones(1000);
         burningLove.setCantidadDeMegusta(100);
 
-        System.out.println(calculadora.getClasificacion());
-        System.out.println(burningLove.getTotalDeValoraciones());
-        System.out.println(burningLove.getSumaDeLasValoraciones());
-        System.out.println(burningLove.promedioDeEvaluaciones());
+        //System.out.println("Clasificacion " + calculadora.getClasificacion());
+        System.out.println("total de valoraciones " + burningLove.getTotalDeValoraciones());
+        System.out.println("suma de valoraciones " + burningLove.getSumaDeLasValoraciones());
+        System.out.println("promedio de valoraciones " + burningLove.promedioDeEvaluaciones());
 
         System.out.println("***********************Podcasts**************************");
 
@@ -67,9 +67,16 @@ public class Pantalla {
         podEjemplo.evaluacion(5);
         podEjemplo.evaluacion(5);
         podEjemplo.evaluacion(5);
-        System.out.println(podEjemplo.getTotalDeValoraciones());
-        System.out.println(podEjemplo.getSumaDeLasValoraciones());
-        System.out.println(podEjemplo.promedioDeEvaluaciones());
+        podEjemplo.setCantidadDeReproducciones(1000);
+        podEjemplo.setCantidadDeMegusta(100);
+        //System.out.println("Clasificacion " + calculadora.getClasificacion());
+        System.out.println("total de valoraciones " + podEjemplo.getTotalDeValoraciones());
+        System.out.println("suma de valoraciones " + podEjemplo.getSumaDeLasValoraciones());
+        System.out.println("promedio de valoraciones " + podEjemplo.promedioDeEvaluaciones());
+
+        Recomendaciones recomendaciones = new Recomendaciones();
+        recomendaciones.recomendacion(burningLove);
+        recomendaciones.recomendacion(podEjemplo);
 
     }
 }

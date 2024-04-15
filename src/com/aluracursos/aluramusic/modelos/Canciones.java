@@ -6,6 +6,15 @@ public class Canciones extends Audios{
     private String genero;
     private String featuring;
 
+    @Override
+    public int getClasificacion() {
+        if (getCantidadDeMegusta()>5000){
+            return 8;
+        }else{
+            return 4;
+        }
+    }
+
     public String getAlbum() {
         return album;
     }
